@@ -17,6 +17,12 @@ export default function Home() {
         >
           tinyMCE
         </Link>
+        <Link
+          className="text-xl bg-slate-50 p-2 rounded-lg text-black"
+          href="/ckeditor"
+        >
+          CKEditor
+        </Link>
       </div>
     </main>
   );
