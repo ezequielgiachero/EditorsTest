@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Editors test",
   description: "Page to check diferent rich text editors",
+  charset: "utf-8",
 };
 
 export default function RootLayout({ children }) {

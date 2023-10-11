@@ -23,6 +23,18 @@ export default function Home() {
         >
           CKEditor
         </Link>
+        <Link
+          className="text-xl bg-slate-200 p-2 rounded-lg text-black pointer-events-none"
+          href="#"
+        >
+          Summernote
+        </Link>
+        <Link
+          className="text-xl bg-slate-50 p-2 rounded-lg text-black"
+          href="/draft"
+        >
+          Draft
+        </Link>
       </div>
     </main>
   );
