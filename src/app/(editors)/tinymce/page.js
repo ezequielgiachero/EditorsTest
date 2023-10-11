@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import { Editor } from "@tinymce/tinymce-react";
-import Link from "next/link";
 
 export default function TinyMCE() {
   const editorRef = useRef(null);
@@ -11,18 +10,8 @@ export default function TinyMCE() {
     }
   };
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 ">
-      <h1 className="text-5xl m-10">This is tinyMCE editor</h1>
-      <p>
-        This could take a bit to load, i am not providing an API key and
-        it&apos;s paid
-      </p>
-      <Link
-        className="text-xl bg-slate-50 p-2 rounded-lg text-black fixed top-2 left-2"
-        href="/"
-      >
-        Go back
-      </Link>
+    <div className="flex flex-col justify-center">
+      <h1 className="text-5xl my-10 mx-auto">This is tinyMCE editor</h1>
 
       <Editor
         apiKey="your-api-key"
@@ -61,6 +50,6 @@ export default function TinyMCE() {
         }}
       />
       <button onClick={log}>Log editor content</button>
-    </main>
+    </div>
   );
 }
